@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin sans', sans-serif;
+}
+html  {    
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4) ),url(./img/fondo.jpg);
+    background-size: cover;
+    background-position: relative;
+    max-width: 100%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo {
+    color: white;
+    font-size: 30px;
+}
+span {
+    color: #EA1538;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #EA1538;
+    transition: .3s;
+} 
