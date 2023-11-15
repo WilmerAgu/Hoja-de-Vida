@@ -6,22 +6,15 @@
 }
 html  {    
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4) ),url(./img/fondo.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) ),url(./img/fondo.jpg);
     background-size: cover;
     background-position: relative;
     max-width: 100%;
 }
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
+/* Navegación*/
 .logo {
     color: white;
-    font-size: 30px;
+    font-size: 2.5rem;
 }
 span {
     color: #EA1538;
@@ -40,3 +33,68 @@ nav ul li a:hover {
     color: #EA1538;
     transition: .3s;
 } 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+        text-align: center; 
+        padding: 20px; 
+    }
+}
+.sub-menu {
+    display: none;
+   
+}
+
+li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+.sub-menu li {
+    display: block; 
+    margin: 5px 0;
+}
+
+/* seccion sobre mi*/
+
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+}
+.h2-perfil {
+    text-align: center;
+    color: #f50000;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+.texto-ppl {
+    border: 1.5rem solid #f50000;
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.texto-ppl p {    
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* seccion hobbies */
+.hobbies {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+      
+}
