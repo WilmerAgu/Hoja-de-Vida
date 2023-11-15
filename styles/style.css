@@ -1,3 +1,7 @@
+:root {
+    --rojo:#f50000; 
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -5,19 +9,45 @@
     font-family: 'Josefin sans', sans-serif;
 }
 html  {    
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model **/
+    scroll-snap-type: y mandatory;
+}
+
+body {
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) ),url(./img/fondo.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) ),url(../img/fondo-3.png);
     background-size: cover;
     background-position: relative;
     max-width: 100%;
 }
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/* Tipografia */
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h1,h2,h3 {
+    text-align: center;
+    color: var(--rojo);
+
+}
+
 /* Navegación*/
 .logo {
     color: white;
     font-size: 2.5rem;
 }
 span {
-    color: #EA1538;
+    color: var(--rojo);
 }
 nav ul li {
     list-style-type: none;
@@ -30,7 +60,7 @@ nav ul li a {
     font-weight: bold;
 }
 nav ul li a:hover {
-    color: #EA1538;
+    color: var(--rojo);
     transition: .3s;
 } 
 nav {
@@ -74,13 +104,13 @@ li:hover .sub-menu {
 }
 .h2-perfil {
     text-align: center;
-    color: #f50000;
+    color: var(--rojo);
     margin-top: 5rem;
     margin-bottom: 1.5rem;
     font-size: 2rem;
 }
 .texto-ppl {
-    border: 1.5rem solid #f50000;
+    border: 1.5rem solid var(--rojo);
     padding: 20px;
     width: 500px;
     margin: 0 auto;
@@ -93,8 +123,29 @@ li:hover .sub-menu {
 }
 
 /* seccion hobbies */
-.hobbies {
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-      
+
+@media (min-width: 768px) {
+    .hobbies {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
 }
+.hobbie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hobbie h3 {
+    color: var(--rojo);
+    margin-top: 3rem;
+}
+
+/*secccion musica*/
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 40%;
+      margin: auto;
+}
+
+ 

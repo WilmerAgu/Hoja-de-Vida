@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wilmer Agudelo</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <nav>
@@ -19,7 +24,7 @@
                 <ul class="sub-menu">
                     <li><a href="#sobremi">Sobre Mi</a></li>
                     <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#musica">Musica</a></li>
+                    <li><a href="#musica">Música</a></li>
                 </ul>
             </li>
             <li><a href="./familia.html">Familia</a></li>
@@ -43,36 +48,75 @@
         </div>
     </section>
 
-    <div class="hobbies">
-        <section id="hobbies"> 
-            <h2 class="h2-perfil">Mis Hobbies</h2>
-            <div>
-                <h3>Música</h3>
-                <img src="./img/musica.jpg" alt="musica" width="600px" height="400px" >
-            </div>
-            <div>
-                <h3>Lectura</h3>
-                <img src="./img/libros.jpg" alt="libros" width="600px" height="400px" >
-            </div>
-            <div>
-                <h3>Café</h3>
-                <img src="./img/cafe.avif" alt="cafe" width="600px" height="400px" >
-            </div>
-            <div>
-                <h3>Anime</h3>
-                <img src="./img/anime.jpg" alt="anime" width="600px" height="400px" >
-            </div>
-            <div>
-                <h3>Fotogrfía Paisajista</h3>
-                <img src="./img/fotografia.jpg" alt="fotografia" width="600px" height="400px" >
-            </div>
-            <div>
-                <h3>Rodar en Moto</h3>
-                <img src="./img/moto.jpg" alt="fotografia" width="600px" height="400px" >
-            </div>
-        </section>
+    <main class="contenedor">
+        <h2 id="hobbies" class="h2-perfil">Mis Hobbies</h2>
+            <div class="carousel">
+                <div class="container">
+                    <br>
+                    <div id="theCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicadores -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#theCarousel" data-slide-to="1"></li>
+                            <li data-target="#theCarousel" data-slide-to="2"></li>
+                            <li data-target="#theCarousel" data-slide-to="3"></li>
+                            <li data-target="#theCarousel" data-slide-to="4"></li>
+                            <li data-target="#theCarousel" data-slide-to="5"></li>
+                        </ol>
         
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <h3>Música</h3>
+                                <img src="./img/musica.jpg" alt="musica" width="300px" height="200px" >
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>      
+                            <div class="item">
+                                <h3>Lectura</h3>
+                                <img src="./img/libros.jpg" alt="libros" width="300px" height="200px" >
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>        
+                            <div class="item">
+                                <h3>Café</h3>
+                                <img src="./img/cafe.avif" alt="cafe" width="300px" height="200px" >
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3>Anime</h3>
+                                <img src="./img/anime.jpg" alt="anime" width="300px" height="200px" >
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3>Fotogrfía Paisajista</h3>
+                                <img src="./img/fotografia.jpg" alt="fotografia" width="300px" height="200px" >
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3>Rodar en Moto</h3>
+                                <img src="./img/moto.jpg" alt="fotografia" width="300px" height="200px" >
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                        </div>
+                            <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">anterior</span>
+                            </a>
+                            <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">siguiente</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
 
-    </div>
+    
+
+    </main>
+   <script src="./index.js"></script>
 </body>
 </html>
