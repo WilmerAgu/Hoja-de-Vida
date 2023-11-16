@@ -15,3 +15,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(nextSlide, 3000); // Cambia de imagen cada 3 segundos
 });
+
+// modal
+
+function openExploraModal() {
+    const modal = document.getElementById("modal-explora");
+    modal.showModal();
+}
+function closeModal() {
+    const modalexplora = document.getElementById("modal-explora");
+
+    if (modalexplora.open) {
+        modalexplora.close();
+    }
+}
