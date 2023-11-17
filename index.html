@@ -25,6 +25,7 @@
                     <li><a href="#sobremi">Sobre Mi</a></li>
                     <li><a href="#hobbies">Hobbies</a></li>
                     <li><a href="#musica">Música</a></li>
+                    <li><a href="#libros">Libros</a></li>
                 </ul>
             </li>
             <li><a href="./familia.html">Familia</a></li>
@@ -113,33 +114,87 @@
                     </div>
                 </div>
             </div> 
-            
+            <!-- fin seccion hobbies -->
+            <!-- inicio seccion musica -->
+            <section>
                 <div class="video">
                     <h2 id="musica">Música</h2>
-                    <div class="overlay" >
-                        <div class="contenedor contenido-video" >
-                            <button  onclick="openExploraModal();">imagenes</button>
-                            <dialog id="modal-explora" >
-                                <img src="./img/cafe.avif" alt="" width="300" style="max-width: 100%;">
-                                <img src="./img/cafe.avif" alt="" width="300" style="max-width: 100%;">
-                                <img src="./img/cafe.avif" alt="" width="300" style="max-width: 100%;">
-                                <img src="./img/cafe.avif" alt="" width="300" style="max-width: 100%;">
-                                <img src="./img/cafe.avif" alt="" width="300" style="max-width: 100%;">
-                                <img src="./img/cafe.avif" alt="" width="300" style="max-width: 100%;">
-                               
-                            <button  onclick="closeModal();">Cerrar</button>
-                        </dialog> 
-                        </div>
-                    </div>
                     <video autoplay muted loop width="100%" >
                         <source src="./videos/concierto.mp4" type="video/mp4">
                         <source src="./videos/concierto.ogg" type="video/ogg">
                         <source src="./videos/concierto.webm" type="video/webm">
                     </video>
                 </div>
-           
-    
-
+                <div class="centrar-btn-modal">
+                    <button class="modal-btn " onclick="openModal();">Bandas Favoritas</button>                       
+                    <dialog id="modal" >
+                        <div class="modal-content">
+                            <div>
+                                <img src="./img/bandas/iron-maiden.jpg" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>IRON MAIDEN</h2>                      
+                            </div>
+                            <div>
+                                <img src="./img/bandas/ac-dc.jpg" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>AC-DC</h2>
+                            </div>                              
+                            <div>
+                                <img src="./img/bandas/amon- amarth.jpg" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>AMON AMARTH</h2>
+                            </div>
+                            <div>
+                                <img src="./img/bandas/avatar.jpg" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>AVATAR</h2>
+                            </div>
+                            <div>
+                                <img src="./img/bandas/behemonth.jpg" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>BEHEMONTH</h2>
+                            </div>
+                            <div>
+                                <img src="./img/bandas/creadle-of-filth.jpg" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>CREADLE OF FILTH</h2>
+                            </div>
+                            <div>
+                                <img src="./img/bandas/dark-funeral.webp" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>DARK FUNERAL</h2>
+                            </div>
+                            <div>
+                                <img src="./img/bandas/epica.webp" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>EPICA</h2>
+                            </div>
+                            <div>
+                                <img src="./img/bandas/hypocresy.jpeg" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>HYPOCRESY</h2>
+                            </div>
+                            <div>
+                                <img src="./img/bandas/megadeth.jpg" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>MEGADETH</h2>
+                            </div>
+                            <div>
+                                <img src="./img/bandas/motorhead.jpg" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>MOTORHEAD</h2>
+                            </div>
+                            <div>
+                                <img src="./img/bandas/orbit-culture.jpg" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>ORBIT CULTURE</h2>
+                            </div>
+                            <div>
+                                <img src="./img/bandas/ozzy-osbourne.jpg" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>OZZY OSBOURNE</h2>
+                            </div>
+                            <div>
+                                <img src="./img/bandas/sabaton.webp" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>SABATON</h2>
+                            </div>
+                            <div>
+                                <img src="./img/bandas/in-flamees.jpg" alt="" width="300px" height="300px" style="max-width: 100%;">
+                                <h2>IN FLAMES</h2>
+                            </div>
+                            
+                            <span class="close-btn" onclick="closeModal();">&#10006;</span>
+                    </dialog> 
+                </div>
+            </section>  
+            <!-- fin seccion bandas de musica -->
     </main>
    <script src="./index.js"></script>
 </body>

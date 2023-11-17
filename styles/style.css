@@ -151,23 +151,12 @@ li:hover .sub-menu {
 
 .video {
     position: relative;
-
-    .overlay {
-        position: absolute;
-        background: rgb(254,0,0);
-        background: linear-gradient(270deg, rgba(254,0,0,0.7059093656994048) 0%, rgba(210,11,11,0.5) 94%);
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-          
-      }
-    video {
-        width: 100%;
-        display: block;
-    }
 }
+video {
+    width: 100%;
+    display: block;
+}
+
 button {
     border: none;
     background-color: var(--rojo);
@@ -177,14 +166,59 @@ button {
     font-weight: bold;
     font-size: 15px;
     transition: .4s;
-}
+}   
 button:hover {
     transform:  scale(1.3);
     cursor: pointer;
 }
-
-  
-
+ 
 dialog::backdrop {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
   }
+
+.centrar-btn-modal{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.modal-content {
+    background-color:rgba(0, 0, 0, 10);
+    padding: 20px;
+    width: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    text-align: center;
+    position: relative;
+    
+    
+}
+@media (min-width: 768px) {
+    .modal-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: rem;
+    }
+}
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}

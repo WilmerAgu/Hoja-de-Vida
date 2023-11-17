@@ -17,15 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // modal
-
-function openExploraModal() {
-    const modal = document.getElementById("modal-explora");
-    modal.showModal();
+function openModal() {
+    document.getElementById('modal').style.display = 'flex';
 }
-function closeModal() {
-    const modalexplora = document.getElementById("modal-explora");
 
-    if (modalexplora.open) {
-        modalexplora.close();
-    }
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
 }
